@@ -1,0 +1,8 @@
+{
+  "actorSpecification": 1,
+  "name": "public-data-pipeline",
+  "title": "Federal Register Monitor",
+  "version": "0.1",
+  "input": "./input_schema.json",
+  "dockerfile": "./Dockerfile"
+}

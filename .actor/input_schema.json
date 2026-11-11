@@ -1,0 +1,30 @@
+{
+  "title": "Federal Register Monitor input",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "keywords": {
+      "title": "Keywords",
+      "type": "array",
+      "description": "Documents matching any keyword. Leave empty for all documents.",
+      "editor": "stringList",
+      "prefill": ["artificial intelligence"]
+    },
+    "daysBack": {
+      "title": "Days back",
+      "type": "integer",
+      "description": "Only documents published in the last N days.",
+      "default": 7,
+      "minimum": 1,
+      "maximum": 365
+    },
+    "maxRecords": {
+      "title": "Max records",
+      "type": "integer",
+      "description": "Stop after this many records (you pay per record).",
+      "default": 100,
+      "minimum": 1,
+      "maximum": 5000
+    }
+  }
+}
